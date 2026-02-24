@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+:root{
+  /* =========================
+     🎨 Background Colors
+  ========================== */
+  --color-bg-white: #ffffff;
+  --color-bg-soft-white: #ffffff1a;
+  --color-bg-orange: #f26a06;
+  --color-bg-pink: #d10a8a;
+  --color-bg-purple: #2e08cf;
+  --color-bg-black: #000000;
+  --color-bg-dark-overlay: #00000026;
+
+  /* =========================
+     📝 Text Colors
+  ========================== */
+  --color-text-white: #ffffff;
+  --color-text-soft-white: #ffffff1a;
+  --color-text-light-gray: #eee5e7;
+  --color-text-cool-gray: #d0d4db;
+  --color-text-dark-bluegray: #1f2938;
+  --color-text-black: #000000;
+
+  /* =========================
+     🧱 Border Colors
+  ========================== */
+  --color-border-light: #ffffff1a;
+
+  /* =========================
+     🔤 Fonts
+  ========================== */
+  --font-family: "Poppins", sans-serif;
+
+  /* =========================
+     🔠 Font Sizes
+  ========================== */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 24px;
+  --text-xl: 30px;
+  --text-2xl: 36px;
+  --text-6xl: 60px;
+
+  /* =========================
+     ⚖ Font Weights
+  ========================== */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+}
+
+@theme {
+
+  /* =========================
+     🎨 Background Colors
+  ========================== */
+  --color-bg-white: #ffffff;
+  --color-bg-soft-white: #ffffff1a;
+  --color-bg-orange: #f26a06;
+  --color-bg-pink: #d10a8a;
+  --color-bg-purple: #2e08cf;
+  --color-bg-black: #000000;
+  --color-bg-dark-overlay: #00000026;
+
+  /* =========================
+     📝 Text Colors
+  ========================== */
+  --color-text-white: #ffffff;
+  --color-text-soft-white: #f5f5f5;
+  --color-text-light-gray: #eee5e7;
+  --color-text-cool-gray: #d0d4db;
+  --color-text-dark-bluegray: #1f2938;
+  --color-text-black: #000000;
+
+  /* =========================
+     🧱 Border Colors
+  ========================== */
+  --color-border-light: #ffffff1a;
+
+  /* =========================
+     🔤 Fonts
+  ========================== */
+  --font-sans: "Poppins", sans-serif;
+  
+  /* =========================
+     🔠 Font Sizes
+  ========================== */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 24px;
+  --text-xl: 30px;
+  --text-2xl: 36px;
+  --text-6xl: 60px;
+
+  /* =========================
+     ⚖ Font Weights
+  ========================== */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   @apply bg-black text-white text-sm;
+}
+
+.mc{
+   @apply container mx-auto;
+}
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 9999px;
+  padding: 10px 32px;
+  font-weight: 500;
+  color: white;
+  border: none;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
