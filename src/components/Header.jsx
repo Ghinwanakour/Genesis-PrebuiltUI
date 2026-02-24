@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../shared/Button'
-
+import logo from '../assets/image/logo.svg' 
 
 function Header() {
   const [MenuOpen, setMenuOpen] = useState(false)
@@ -22,7 +22,7 @@ function Header() {
         Scrolled ? 'bg-white/15 backdrop-blur-lg' : ''
       }`}>
         <Link to="/">
-          <img src="/src/assets/image/logo.svg" alt="logo" className="h-8.5 w-auto" />
+          <img src={logo} alt="logo" className="h-8.5 w-auto" />  
         </Link>
 
         <div className="hidden md:flex items-center space-x-10">
@@ -51,7 +51,7 @@ function Header() {
           <Link to="/" onClick={() => setMenuOpen(false)}>Use Cases</Link>
           <Link to="/" onClick={() => setMenuOpen(false)}>Pricing</Link>
           <Link to="/" onClick={() => setMenuOpen(false)}>Docs</Link>
-          <Button to="/" className='border! border-white/30!'>Sign Up</Button>
+          <Button className='border! border-white/30!'>Sign Up</Button>
           
           <button 
             className="glass p-2 rounded-md"

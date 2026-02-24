@@ -1,5 +1,8 @@
 import React from 'react'
 import MainTitle from '../shared/MainTitle'
+import workflow1 from '../assets/image/workflow1.png' 
+import workflow2 from '../assets/image/workflow2.png'
+import workflow3 from '../assets/image/workflow3.png'
 
 function FromIdea() {
   const steps = [
@@ -7,19 +10,19 @@ function FromIdea() {
       num: '01',
       title: 'Start with a prompt',
       desc: 'Start with a simple prompt describing what you want your agent to do. Our builder interprets your idea and creates the structure for you in seconds',
-      img: '/src/assets/image/workflow1.png'
+      img: workflow1 
     },
     {
       num: '02',
       title: 'Adjust and personalize',
       desc: 'Adjust tasks, actions and integrations. Add personality, rules and data sources to make the agent work exactly the way you want.',
-      img: '/src/assets/image/workflow2.png'
+      img: workflow2
     },
     {
       num: '03',
       title: 'Launch & Automate',
       desc: 'Deploy your agent and let it run. It executes tasks autonomously, reports results, and continues working in the background.',
-      img: '/src/assets/image/workflow3.png'
+      img: workflow3
     }
   ]
 
@@ -35,7 +38,6 @@ function FromIdea() {
       </div>
 
       <div className="relative space-y-20 md:space-y-30 mt-20">
-        {/* Vertical timeline with numbers - hidden on mobile, visible on md and up */}
         <div className="flex-col items-center hidden md:flex absolute left-1/2 -translate-x-1/2">
           {steps.map((step, index) => (
             <React.Fragment key={index}>
@@ -49,7 +51,6 @@ function FromIdea() {
           ))}
         </div>
 
-        {/* Steps content */}
         {steps.map((step, index) => (
           <div 
             key={index}

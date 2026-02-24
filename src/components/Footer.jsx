@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
+import logo from '../assets/image/logo.svg'
 
 function Footer() {
   return (
     <footer className="flex flex-col items-center px-4 md:px-16 lg:px-24 justify-center w-full pt-16 mt-40 glass border-0">
       <Link to="/">
-        <img src="/src/assets/image/logo.svg" alt="logo" className="h-8.5 w-auto" />
+        <img src={logo} alt="logo" className="h-8.5 w-auto" />
       </Link>
 
       <div className="flex flex-wrap justify-center gap-8 py-8">
